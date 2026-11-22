@@ -130,6 +130,11 @@ namespace Assigment_5_oop
 
 
         }
+        // part 2 q1 
+        public Shipment copyShipment()
+        {
+            return (Shipment)this.MemberwiseClone();
+        }
     }
 
 }

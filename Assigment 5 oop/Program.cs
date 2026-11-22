@@ -38,7 +38,23 @@
             // الكومبيلر بيتجاها تمام كانه بيحذفها مبيحصلش اي ايرور
 
             #endregion
-           
+            #region part 2#
+            DeliveryAddress d1 = new DeliveryAddress("cairo", "Glaa", 44);
+
+            Shipment s1 = new Shipment("clotes", "cotton clothes", 44.6m, 66, d1);
+            Shipment s2 = s1;
+            s2.Weight = 88.9m;
+            Console.WriteLine(s1.PrintShipment());
+            Console.WriteLine(s2.PrintShipment());
+            s2 = s1.copyShipment();
+            s2.Weight = 78.99m;
+            Console.WriteLine(s1.PrintShipment());
+            Console.WriteLine(s2.PrintShipment());
+            ///الاختلاف ان المره الاوله انا اخدت ريفرنس من الاوبجيكت يعني الاتنين بيشاورو على نفس المكان  
+            ///لكن المره التانيه انا باخد كوبي من الvalueوريفرنس من الريفرنس تايب 
+
+            #endregion
+
         }
     }
 }
