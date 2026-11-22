@@ -13,9 +13,10 @@ namespace Assigment_5_oop
         private decimal weight;
         private decimal deleiveryFee;
         public DeliveryAddress destination { get; set; }
-        
+
         //answer 2 part 2
-        
+        ///part2 q10 
+        partial void OnTrackingStatusChanged(string newStatus);
 
 
 
@@ -40,6 +41,7 @@ namespace Assigment_5_oop
         public void upDateWeigthExtra(decimal weigth, decimal extra)
         {
             Weight = weigth + extra;
+            OnTrackingStatusChanged("Out For Delivery");
 
         }
         #endregion
