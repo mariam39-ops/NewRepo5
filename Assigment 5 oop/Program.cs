@@ -80,7 +80,9 @@
             s1.destination.setCity("alex");
             Console.WriteLine(s2.PrintShipment());
             s2.destination.getCity();
-            
+            //part2 q7
+            DeliveryUtilities.PrintSeparator();
+            DeliveryUtilities.PrintSystemTitle();
 
         }
     }
