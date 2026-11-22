@@ -135,6 +135,22 @@ namespace Assigment_5_oop
         {
             return (Shipment)this.MemberwiseClone();
         }
+        public Shipment DeepCopy()
+        {
+            DeliveryAddress newDelive = new DeliveryAddress(
+                this.destination.getCity(), this.destination.getStreet(), this.destination.getBuldingNum());
+            return new Shipment(
+                  this.trackingCode,
+        this.Descrption,
+        this.Weight,
+        this.DeleiveryFee,
+        newDelive);
+
+          
+
+           }
+
+        }
     }
 
-}
+

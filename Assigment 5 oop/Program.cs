@@ -73,8 +73,14 @@
             Console.WriteLine("----------------------------------------------------------");
 
             Console.WriteLine(s1.PrintShipment());
-           
 
+            //part 2 q3 
+            s2.DeepCopy();
+            Console.WriteLine(s1.PrintShipment());
+            s1.destination.setCity("alex");
+            Console.WriteLine(s2.PrintShipment());
+            s2.destination.getCity();
+            
 
         }
     }
