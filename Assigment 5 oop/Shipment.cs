@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Assigment_5_oop
 {
-    internal  class Shipment
+    internal  class Shipment:DeliveryAddress
     {
 
 
@@ -126,7 +126,7 @@ namespace Assigment_5_oop
         #endregion
         public string PrintShipment()
         {
-            return $" the code: {TrackingCode} the descrabtion : {Descrption} weigth  : {Weight} delivery cost : {DeleiveryFee} , ";
+            return  $" the code: {TrackingCode} the descrabtion : {Descrption} weigth  : {Weight} delivery cost : {DeleiveryFee} ,{destination.GetFullAdress()} ";
 
 
         }

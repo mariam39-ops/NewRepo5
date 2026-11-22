@@ -54,6 +54,27 @@
             ///لكن المره التانيه انا باخد كوبي من الvalueوريفرنس من الريفرنس تايب 
 
             #endregion
+            // part 2 q2 
+            Shipment ship1 = new Shipment("555grf", "clothes", 88.98m, 77.99m, d1);
+            Shipment ship2 = ship1.copyShipment();
+            s1.TrackingCode = "999";
+            s1.Descrption = "clothes cotton and lekra";
+            s1.Weight = 1030.88m;
+            s1.destination.setCity ( "mansora");
+            s1.destination.setStreet("elsaneya");
+            s1.destination.setBuldingNum(66);
+
+            Console.WriteLine(s1.PrintShipment());
+            Console.WriteLine("----------------------------------------------------------");
+            s2.TrackingCode = "123r";
+            s2.Descrption = "skin care made in korean";
+            s2.Weight = 50000.8m;
+            Console.WriteLine(s2.PrintShipment());
+            Console.WriteLine("----------------------------------------------------------");
+
+            Console.WriteLine(s1.PrintShipment());
+           
+
 
         }
     }
