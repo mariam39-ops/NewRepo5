@@ -7,7 +7,7 @@ namespace Assigment_5_oop
     internal  class Shipment:DeliveryAddress
     {
 
-
+        public static int TotalShipmentsCreated = 0;
         private string trackingCode;
         private string descrption;
         private decimal weight;
@@ -32,6 +32,7 @@ namespace Assigment_5_oop
             Weight = i;
             DeleiveryFee = de;
             destination = delive;
+            TotalShipmentsCreated++;
         }
         //
         public string TrackingCode
