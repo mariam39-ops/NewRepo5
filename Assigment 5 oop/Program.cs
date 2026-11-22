@@ -84,6 +84,9 @@
             DeliveryUtilities.PrintSeparator();
             DeliveryUtilities.PrintSystemTitle();
 
+            //part2 q8
+           s1.GetSummary();
+           s1.IsDelivered();
         }
     }
 }
