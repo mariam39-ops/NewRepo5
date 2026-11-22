@@ -34,6 +34,11 @@ namespace Assigment_5_oop
             destination = delive;
             TotalShipmentsCreated++;
         }
+        static Shipment()
+        {
+            TotalShipmentsCreated = 0;
+            Console.WriteLine("Shipment System Initialized");
+        }
         //
         public string TrackingCode
         {
